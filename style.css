@@ -1,0 +1,226 @@
+/*=== GERAL =================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+main {
+  background-color: #006557;
+  padding-bottom: 50px;
+}
+
+.bg-top {
+  padding-top: 0.5px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  overflow: overlay;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/*=== ABOUT =================================*/
+#about {
+  text-align: left;
+  background-color: var(--brand-light);
+}
+
+#about header h2 {   /*Carolina Magalhães*/
+  margin-left: 0px; /*espaçamento do nome perfil*/
+
+}
+
+#about header h3 {   /*São Paulo*/
+  margin-left: 2px; /*espaçamento do nome São Paulo*/
+  margin-top: 10px;
+
+}
+
+#about header img {   /*estrelas*/
+  width: 100px;
+  height: 90px;
+  margin-top: -0.5px;
+}
+
+#perfil {
+  color: #6d7a78;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 320px; /*espaçamento do img perfil*/
+  width: 220px; /*tamanho da img do perfil*/
+  height: 220px;
+
+}
+
+.seu-perfil p{
+  margin-top: 100px; /*nome seu perfil*/
+  font-size: 30px;
+  text-align: left;
+  margin-left: 540px;
+}
+
+
+/*=== RESPONSIVO =================================*/
+@media (min-width: 1024px) {
+  /*=== GERAL =================================*/
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  /*=== ABOUT =================================*/
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+  #contact .col-b{
+    justify-content: right;
+  }
+
+  /*=== Fotos - Capacitações =================================*/
+
+  .box img {    
+   width: 95%;
+   height: 95%;
+   padding-top: 10px;
+   padding-bottom: 40px;
+   display: inline-block;
+
+  }
+
+  .box p {    
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .box a {    
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .box h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+   /*=== Pesquisa =================================*/
+   
+.idem {
+  padding: 15px;
+  border: 1px #DDD solid;
+}
+.idem:nth-child(1){
+  margin-top: 50px;
+  width: 600px;
+  border-radius: 10px 0px 0px 10px;
+}
+.idem:nth-child(2){
+  width: 40px;
+  border-radius: 0px 10px 10px 0px;
+  text-align:left;
+  color: white;
+  background: black;
+  border: 1px black solid;
+  cursor: pointer;
+  text-indent: -1.3px;
+}
+.idem:nth-child(1):focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px #DDD solid;
+
+} 
+
+.icones {    /*icones wifi. sinal. bateria*/
+  color: white;
+  margin-left: 550px;
+  margin-top: -0.5px;
+  align-items: right;
+}
+
+.clock {      /*relógio digital*/
+  margin-top: 20px;
+  margin-left: 330px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: white;
+  font-size: 20px;
+
+   }
+
+   .col-a h2 {
+    color: black;
+    font-weight:bolder;
+    text-decoration:none !important
+    }
+    .col-a h2:hover {
+    text-shadow: 0 0 0.5px #006557;
+    }
+
+    .col-a h3 {
+      color: black;
+      font-weight:bolder;
+      text-decoration:none !important
+      }
+      .col-a h3:hover {
+      text-shadow: 0 0 0.5px #006557;
+      }
+
+      .box a {
+        color: #07689f;
+        font-weight:bolder;
+        margin-left: 200px;
+        text-decoration:none !important
+        
+        }
+      .box a:hover {
+        text-shadow: 0 0 0.5px #07689f;
+        }
+ }

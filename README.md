@@ -1,5 +1,5 @@
 # desafio-pratico-upbase
-Criação de Tela de Usuário 
+**Criação de Tela de Usuário** 
 
 # Desafio UpBase# -  Você foi selecionado para fazer a tela: SEU PERFIL.
 ## Imagens do Projeto
@@ -14,13 +14,13 @@ desenvolver a tela **Seu Perfil** de uma aplicação.
 ## Desenvolvimento do Projeto
 Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
-**HTML**
-**CSS**
-**JavaScript**
-**Bootstrap**
+**HTML** ▪️
+**CSS** ▪️
+**JavaScript** ▪️
+**Bootstrap** ▪️
 
 ### Workspace
-- https://clepsonfonseca.github.io/desafio-pratico-upbase/
+-**Git Hub Pages**  https://clepsonfonseca.github.io/desafio-pratico-upbase/
 
 ### UpBase
  - Projeto desenvolvido em - Junho 2022.

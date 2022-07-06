@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Perfil</title>
-    <link rel="stylesheet" href="style.css">     
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>  <!-- icone de busca -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- icones wifi, sinal, bateria -->
+    <script src="https://kit.fontawesome.com/e54928ccfa.js" crossorigin="anonymous"></script> <!-- icones wifi, sinal, bateria, seta -->
 </head>
 <body>
   <main>
@@ -16,9 +16,9 @@
     <div class="clock"></div>
   </div>
   <div class ="icones">      
-      <i class="fa fa-signal"></i>
-      <i class="fa fa-wifi"></i>
-      <i class="fa fa-battery-full"></i> 
+    <i class="fa-solid fa-signal"></i>
+    <i class="fa-solid fa-wifi"></i>
+    <i class="fa-solid fa-battery-full"></i> 
   </div>    
       <div class="col-6 col-md-4">
    <div class="busca"><input type="text" id="campo_busca" placeholder="Buscar capacitações, profissionais..." class="idem"><button type="submit" onclick="" class="buscar_produto idem"><i class="fa fa-search" action=""></i></button> </div> 
@@ -26,34 +26,60 @@
     </div> 
   </div>
 </main>
-  <div class= "seu-perfil">
-    <p>Seu perfil</p>
+
+<!--==================== PERFIL ====================-->
+      <div>
+        <h1 class="seu__perfil">Seu perfil</h1>
+        <img id="perfil" src="assets/perfil.png"/>
+      </div>
+
+      <div>
+        <h2 class="digite__name">digite seu nome...</h2>
+        <h3 class="digite__city">digite sua cidade...</h3>
+      </div>      
+
+      <div class="perfil__icon-star">
+        <a href="javascript:void(0)" onclick="Avaliar(1)">
+          <img src="assets/star0.png" id="s1"></a>
+          
+          <a href="javascript:void(0)" onclick="Avaliar(2)">
+          <img src="assets/star0.png" id="s2"></a>
+          
+          <a href="javascript:void(0)" onclick="Avaliar(3)">
+          <img src="assets/star0.png" id="s3"></a>
+          
+          <a href="javascript:void(0)" onclick="Avaliar(4)">
+          <img src="assets/star0.png" id="s4"></a>
+          
+          <a href="javascript:void(0)" onclick="Avaliar(5)">
+          <img src="assets/star0.png" id="s5"></a>
+          <p id="rating">(0)</p>
+      </div>
   </div>
-    <div id="about">
-        <div class="wrapper">
-          <div class="col-a">
-            <header>              
-              <h2>digite seu nome...</h2>
-              <h3>digite sua cidade...</h3>
-              <img src="assets/estrelas.png">
-            </header>             
-          </div>  
-          <div class="col-b">      
-            <img id="perfil" src="assets/perfil.png"/>
-          </div>                   
-          <div class="box">
-            <h3>Capacitações profissionais</h3>
-            <img src="assets/diabetes.jpg"/>
-            <p> Diabetes: alimentos para evitar</p>
-        </div>
-        <div class="box">
-            <a href="https://www.bbc.com/portuguese/internacional-58276202" style="text-decoration:none" color="#07689f" target="_blank"><strong>Ver mais</strong></a>
-            <img src="assets/doses.jpg"/>
-            <p> Como ministrar doses </p>
-        </div>      
-         </div>       
-        </div>
-    </div>    
+</div>    
+          <!-- INICIO DO CÓDIGO HTML - SECTION (Clients) -->
+<section id="clients">
+  <div class="border"></div>
+  <div class="headtext">Completar perfil         
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+  <div class="clients-container">
+    <div>
+      <h3 class="cap-profissao">Capacitações profissionais</h3>      
+      <img class="diabetes" src="/assets/diabetes.jpg" class="client" alt="diabetes">
+      <h1 class="parceiros">Parceiros</h1>      
+      <p class="alimentos">Diabetes: alimentos<br>para evitar.</p>
+    </div>
+    <div>
+      <a href="https://www.bbc.com/portuguese/internacional-58276202" style="text-decoration:none" color="#07689f" target="_blank"><strong>Ver mais</strong></a>      
+      <img class="doses" src="/assets/doses.jpg" class="client" alt="doses">      
+      <h1 class="capacitacao">Capacitações</h1>
+      <p class="ministrar">Como ministrar<br>doses</p>
+    </div>
+  </div>
+</section>
+  <!-- FINAL DO CÓDIGO HTML - SECTION (Clients) -->
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="js/funcoes.js"></script>     
 </html>

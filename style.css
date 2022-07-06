@@ -12,6 +12,9 @@
 main {
   background-color: #006557;
   padding-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 .bg-top {
@@ -25,7 +28,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 
   text-align: center;
@@ -33,194 +36,235 @@ body {
   overflow: overlay;
 }
 
-.wrapper {
-  width: min(50rem, 100%);
-  margin-inline: auto;
-  padding-inline: 2.4rem;
+section {
+  margin-left: 310px;
+  padding-bottom: 100px;
 }
 
-/*=== ABOUT =================================*/
-#about {
+/*==================== PERFIL ====================*/
+.seu__perfil {  /* nome seu perfil */
   text-align: left;
-  background-color: var(--brand-light);
+  margin-left: 400px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
 }
 
-#about header h2 {   /*Carolina Magalhães*/
-  margin-left: 0px; /*espaçamento do nome perfil*/
-
+#perfil {   /* imagem seu perfil */
+  width: 15%;
+  height: 15%;    
+  margin-left: -430px; 
 }
 
-#about header h3 {   /*São Paulo*/
-  margin-left: 2px; /*espaçamento do nome São Paulo*/
-  margin-top: 10px;
-
-}
-
-#about header img {   /*estrelas*/
-  width: 100px;
-  height: 90px;
-  margin-top: -0.5px;
-}
-
-#perfil {
-  color: #6d7a78;
-  margin-top: 10px;
-  margin-bottom: 2px;
-  margin-left: 320px; /*espaçamento do img perfil*/
-  width: 220px; /*tamanho da img do perfil*/
-  height: 220px;
-
-}
-
-.seu-perfil p{
-  margin-top: 100px; /*nome seu perfil*/
-  font-size: 30px;
+.digite__name {
+  font-size: 20px;
+  margin-top: -200px;
   text-align: left;
-  margin-left: 540px;
+  margin-left: 580px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}    
+
+.digite__city { 
+  font-size: 20px;
+  text-align: left; 
+  margin-left: 580px;  
+  padding-bottom: 10px;
 }
 
+.perfil__icon-star img {
+  display: inline-block;
+  grid-template-columns: repeat(5, 1fr);
+  margin-inline: 10px;
+}
 
-/*=== RESPONSIVO =================================*/
-@media (min-width: 1024px) {
-  /*=== GERAL =================================*/
-  body {
-    overflow: auto;
-  }
+.perfil__icon-star p {
+  align-items: left;
+  margin-left: 290px;
+  margin-top: -20px;
+}
 
-  .wrapper {
-    width: min(112rem, 100%);
-    display: grid;
-  }
+  /*=== imagens e textos - diabetes e doses =================================*/  
+#clients {
+  width: 100%;
+  color: black;
+  padding: 30px;
+}
 
-  .col-a {
-    grid-area: A;
-  }
+.border {  /* borda acima do completar perfil  */
+  border-top: 0.5px solid grey;
+  width: 50%;
+  margin-top: 80px;
+}   
 
-  .col-b {
-    grid-area: B;
-  }
+.headtext {  /* Completar perfil */
+  margin-left: -540px;
+  margin-right: 160px;
+  font-size: 2.2rem;  
+  color: #07689f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px ;
+  padding-bottom: 50px; 
+  letter-spacing: 2px;
+}
 
-  /*=== ABOUT =================================*/
-  #about .wrapper {
-    grid-template-columns: 48rem 1fr;
-    grid-template-areas: 'B A';
-    gap: 6.7rem;
-  }
+.headtext :hover {
+  text-shadow: 0 0 0.5px #1470a4;
+}  
 
-  #about .col-a {
-    align-self: center;
-  }
+.clients-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
 
-  #about .content p {
-    margin-bottom: 0;
-  }
-  #contact .col-b{
-    justify-content: right;
-  }
+.diabetes {  /* imagem diabetes */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  width: 25%;
+  padding-bottom: 60px;
+  border-radius: 5px;
+}
 
-  /*=== Fotos - Capacitações =================================*/
+.doses {  /* imagem doses */
+  position: absolute;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: -310px;
+  width: 25%;
+  width: 25%;
+  margin-top: 10px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+}
 
-  .box img {    
-   width: 95%;
-   height: 95%;
-   padding-top: 10px;
-   padding-bottom: 40px;
-   display: inline-block;
-
-  }
-
-  .box p {    
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-    padding-bottom: 50px;
-  }
-
-  .box a {    
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-    padding-bottom: 50px;
-  }
-
-  .box h3 {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-   /*=== Pesquisa =================================*/
+   /*=== busca =================================*/
    
 .idem {
   padding: 15px;
   border: 1px #DDD solid;
 }
+
 .idem:nth-child(1){
   margin-top: 50px;
-  width: 600px;
+  width: 550px;
   border-radius: 10px 0px 0px 10px;
 }
+
 .idem:nth-child(2){
   width: 40px;
   border-radius: 0px 10px 10px 0px;
   text-align:left;
-  color: white;
-  background: black;
-  border: 1px black solid;
+  color: black;
   cursor: pointer;
   text-indent: -1.3px;
 }
+
 .idem:nth-child(1):focus {
   box-shadow: 0 0 0 0;
   outline: 0;
   border: 1px #DDD solid;
-
 } 
+/*=== final da busca =================================*/
 
-.icones {    /*icones wifi. sinal. bateria*/
+.icones {  /*icones wifi. sinal. bateria*/
   color: white;
-  margin-left: 550px;
-  margin-top: -0.5px;
+  margin-left: 530px;
+  margin-top: -20px;
   align-items: right;
+  letter-spacing: 3px;
 }
 
-.clock {      /*relógio digital*/
+.clock {  /*relógio digital*/
   margin-top: 20px;
-  margin-left: 330px;
+  margin-left: 50px;
   display: flex;
   justify-content: left;
   align-items: left;
   color: white;
   font-size: 20px;
+}
 
-   }
+.cap-profissao {  /* texto capacitações profissionais */
+  display: flex;
+  font-size: 25px;
+  color: grey;
+  align-items: center;
+  justify-items: center;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
 
-   .col-a h2 {
-    color: black;
-    font-weight:bolder;
-    text-decoration:none !important
-    }
-    .col-a h2:hover {
-    text-shadow: 0 0 0.5px #006557;
-    }
+.parceiros {   /* texto parceiros */
+  position: absolute;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  margin-left: 10px;
+  display: flex;
+  font-size: 20px;
+  background: #d48a04;  
+  color: white;  
+  border-radius: 6px;
+}
 
-    .col-a h3 {
-      color: black;
-      font-weight:bolder;
-      text-decoration:none !important
-      }
-      .col-a h3:hover {
-      text-shadow: 0 0 0.5px #006557;
-      }
+.alimentos {   /* Diabetes: alimentos para evitar */
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 160px;
+}
 
-      .box a {
-        color: #07689f;
-        font-weight:bolder;
-        margin-left: 200px;
-        text-decoration:none !important
-        
-        }
-      .box a:hover {
-        text-shadow: 0 0 0.5px #07689f;
-        }
- }
+.ministrar {   /* Como ministrar doses */
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  justify-items: center;
+  margin-left: -300px;
+  margin-top: 170px;
+}
+
+.clients-container a {  /* texto ver mais */
+  font-size: 20px;
+  color: #07689f;
+  font-weight:bold;
+  align-items: center;
+  margin-left: -900px;
+  padding-bottom: 15px;
+  justify-content: center;
+  text-decoration:none !important  /* tirar o sublinhado do texto */
+}
+
+.clients-container a:hover {
+  text-shadow: 0 0 0.5px #1470a4;
+}
+
+.capacitacao {   /* texto capacitações */
+  position: absolute; 
+  width: 13%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: -290px;
+  margin-top: 20px;
+  background: #3b2d72; /* hex: 0 - F */
+  color: white;
+  border-radius: 6px;
+}
+/* @media screen and (max-width:580px) */

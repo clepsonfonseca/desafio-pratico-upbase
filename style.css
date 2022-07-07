@@ -1,4 +1,4 @@
-/*=== GERAL =================================*/
+/*==================== GERAL ====================*/
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +32,6 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
-
-  overflow: overlay;
 }
 
 section {
@@ -58,15 +56,18 @@ section {
 
 .digite__name {
   font-size: 20px;
+  color: black;
   margin-top: -200px;
   text-align: left;
   margin-left: 580px;
   padding-top: 15px;
   padding-bottom: 10px;
-}    
+  letter-spacing: 2px;
+}
 
 .digite__city { 
   font-size: 20px;
+  color: grey;
   text-align: left; 
   margin-left: 580px;  
   padding-bottom: 10px;
@@ -84,7 +85,7 @@ section {
   margin-top: -20px;
 }
 
-  /*=== imagens e textos - diabetes e doses =================================*/  
+/*======== IMAGENS e TEXTOS - DIABETES e DOSES =============*/
 #clients {
   width: 100%;
   color: black;
@@ -97,12 +98,14 @@ section {
   margin-top: 80px;
 }   
 
-.headtext {  /* Completar perfil */
+.input {  /* texto Completar perfil */
   margin-left: -540px;
   margin-right: 160px;
   font-size: 2.2rem;  
   color: #07689f;
   font-weight: bold;
+  border: none;
+  background: none;
   text-align: center;
   margin-top: 10px;
   padding-top: 20px ;
@@ -110,9 +113,21 @@ section {
   letter-spacing: 2px;
 }
 
-.headtext :hover {
-  text-shadow: 0 0 0.5px #1470a4;
+.input :hover {
+  text-shadow: 0 0 0.7px #1470a4;
 }  
+
+.seta i {
+  position: absolute;
+  display: flex;    
+  color: #07689f;
+  font-weight: bold;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 410px;
+  margin-top: -78px;
+}
 
 .clients-container {
   position: relative;
@@ -146,7 +161,7 @@ section {
   border-radius: 5px;
 }
 
-   /*=== busca =================================*/
+/*==================== PESQUISA ====================*/
    
 .idem {
   padding: 15px;
@@ -173,7 +188,7 @@ section {
   outline: 0;
   border: 1px #DDD solid;
 } 
-/*=== final da busca =================================*/
+/*==================== FINAL PESQUISA ====================*/
 
 .icones {  /*icones wifi. sinal. bateria*/
   color: white;

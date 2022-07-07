@@ -1,3 +1,4 @@
+/* Avaliação Estrelas  */
 function Avaliar(estrela) {
     var url = window.location;
     url = url.toString()

@@ -1,3 +1,5 @@
+/* Relógio */
+
 const getHours = () => {
     const clock = document.getElementsByClassName('clock')[0]
     const date = new Date()
@@ -13,6 +15,8 @@ const getHours = () => {
   setInterval(() => {
     getHours()
   }, 1000)
+
+/* Preenchimento de Perfil */  
 
 const h2=
 document.querySelector("h2");
@@ -35,5 +39,12 @@ h3.textContent = `${userName}`;
  var img = document.querySelector("#perfil");
 img.setAttribute('src', 'assets/Clepson Fonseca.png');
 
+}
+
+/* Completar Perfil - Alert */ 
+
+function funcao1()
+{
+alert("Completar perfil: Preencha suas informações para encontrar pacientes.");
 }
 

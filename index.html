@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Perfil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">       
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>  <!-- icone de busca -->
     <script src="https://kit.fontawesome.com/e54928ccfa.js" crossorigin="anonymous"></script> <!-- icones wifi, sinal, bateria, seta -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
   <main>
@@ -60,20 +61,25 @@
 <!--============== INICIO SECTION (Clients) ===============-->   
 <section id="clients">
   <div class="border"></div>
-   <input class="input" type="button" onclick="funcao1()" value="Completar perfil" />  
-   <div class="seta">       
-     <i class="fa-solid fa-arrow-right"></i>
-   </div>
+
+  <div class="completar-perfil">  
+    <a href="#" onclick="swal('Completar perfil: Preencha suas informações para encontrar pacientes.');">Completar perfil</a>
   </div>
+
+  <div class="seta">       
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+
   <div class="clients-container">
     <div>
       <h3 class="cap-profissao">Capacitações profissionais</h3>      
       <img class="diabetes" src="assets/diabetes.jpg" class="client" alt="diabetes">
       <h1 class="parceiros">Parceiros</h1>      
       <p class="alimentos">Diabetes: alimentos<br>para evitar.</p>
-    </div>
+    </div>  
+  </div>
     <div>
-      <a href="https://www.bbc.com/portuguese/internacional-58276202" style="text-decoration:none" color="#07689f" target="_blank"><strong>Ver mais</strong></a>      
+      <a class="ver-mais" href="https://www.bbc.com/portuguese/internacional-58276202" style="text-decoration:none" color="#07689f" target="_blank"><strong>Ver mais</strong></a>      
       <img class="doses" src="assets/doses.jpg" class="client" alt="doses">      
       <h1 class="capacitacao">Capacitações</h1>
       <p class="ministrar">Como ministrar<br>doses</p>

@@ -43,8 +43,7 @@ img.setAttribute('src', 'assets/Clepson Fonseca.png');
 
 /* Completar Perfil - Alert */ 
 
-function funcao1()
-{
-alert("Completar perfil: Preencha suas informações para encontrar pacientes.");
-}
+document.getElementById('mensagem-erro').onclick = function() {
+  swal('Oh no...', 'Algo deu errado!', 'error')
+};
 

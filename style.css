@@ -57,9 +57,9 @@ section {
 .digite__name {
   font-size: 20px;
   color: black;
-  margin-top: -200px;
+  margin-top: -175px;
   text-align: left;
-  margin-left: 580px;
+  margin-left: 570px;
   padding-top: 15px;
   padding-bottom: 10px;
   letter-spacing: 2px;
@@ -69,7 +69,7 @@ section {
   font-size: 20px;
   color: grey;
   text-align: left; 
-  margin-left: 580px;  
+  margin-left: 570px;  
   padding-bottom: 10px;
 }
 
@@ -94,15 +94,17 @@ section {
 
 .border {  /* borda acima do completar perfil  */
   border-top: 0.5px solid grey;
-  width: 50%;
+  width: 53%;
   margin-top: 80px;
+  padding-bottom: 20px;
 }   
 
-.input {  /* texto Completar perfil */
+.completar-perfil a {  /* texto Completar perfil */
   margin-left: -540px;
   margin-right: 160px;
   font-size: 2.2rem;  
   color: #07689f;
+  text-decoration: none;
   font-weight: bold;
   border: none;
   background: none;
@@ -113,8 +115,8 @@ section {
   letter-spacing: 2px;
 }
 
-.input :hover {
-  text-shadow: 0 0 0.7px #1470a4;
+.completar-perfil a:hover {
+  text-shadow: 0 0 0.5px #006557;
 }  
 
 .seta i {
@@ -126,7 +128,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-left: 410px;
-  margin-top: -78px;
+  margin-top: -28px;
 }
 
 .clients-container {
@@ -142,23 +144,25 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5px;
+  height: -50%;
   width: 25%;
-  width: 25%;
+  margin-top: 5px;
   padding-bottom: 60px;
-  border-radius: 5px;
+  border-radius: 2%;
 }
 
 .doses {  /* imagem doses */
   position: absolute;
   display: flex;
-  align-items: left;
-  justify-content: left;
-  margin-left: -310px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 340px;
+  height: 45%;
   width: 25%;
-  width: 25%;
-  margin-top: 10px;
+  margin-top: 5px;
   padding-bottom: 60px;
-  border-radius: 5px;
+  border-radius: 2%;
 }
 
 /*==================== PESQUISA ====================*/
@@ -188,7 +192,7 @@ section {
   outline: 0;
   border: 1px #DDD solid;
 } 
-/*==================== FINAL PESQUISA ====================*/
+/*==================== ICONES ====================*/
 
 .icones {  /*icones wifi. sinal. bateria*/
   color: white;
@@ -207,6 +211,7 @@ section {
   color: white;
   font-size: 20px;
 }
+/*==================== TEXTOS DAS IMAGENS ====================*/
 
 .cap-profissao {  /* texto capacitações profissionais */
   display: flex;
@@ -215,6 +220,7 @@ section {
   align-items: center;
   justify-items: center;
   letter-spacing: 2px;
+  padding-top: 45px;
   padding-bottom: 15px;
 }
 
@@ -223,12 +229,14 @@ section {
   width: 10%;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
   display: flex;
   font-size: 20px;
   background: #d48a04;  
   color: white;  
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-radius: 6px;
 }
 
@@ -250,23 +258,26 @@ section {
   color: white;
   text-align: center;
   justify-items: center;
-  margin-left: -300px;
-  margin-top: 170px;
+  margin-left: 360px;
+  margin-top: 160px;
 }
 
-.clients-container a {  /* texto ver mais */
+.ver-mais {  /* texto ver mais */
+  position: absolute;
+  display: flex;
   font-size: 20px;
   color: #07689f;
   font-weight:bold;
   align-items: center;
-  margin-left: -900px;
-  padding-bottom: 15px;
+  margin-left: 520px;
+  margin-top: -40px;
+  padding-bottom: 30px;
   justify-content: center;
   text-decoration:none !important  /* tirar o sublinhado do texto */
 }
 
-.clients-container a:hover {
-  text-shadow: 0 0 0.5px #1470a4;
+.ver-mais :hover {
+  text-shadow: 0 0 0.5px #006557;
 }
 
 .capacitacao {   /* texto capacitações */
@@ -276,10 +287,12 @@ section {
   font-size: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: -290px;
+  margin-left: 360px;
   margin-top: 20px;
   background: #3b2d72; /* hex: 0 - F */
   color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-radius: 6px;
 }
 /* @media screen and (max-width:580px) */

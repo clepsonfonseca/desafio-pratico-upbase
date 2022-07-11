@@ -5,6 +5,11 @@ Criação de Tela de Usuário
 ## Imagens do Projeto
 ![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil1.png)
 ![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil2.png)
+![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil3.png)
+![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil4.png)
+![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil5.png)
+![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil6.png)
+![store-theme-default](https://github.com/clepsonfonseca/banco-de-imagens/blob/main/assets/img/seuperfil7.png)
 
 ## Sobre o Projeto
 desenvolver a tela **Seu Perfil** de uma aplicação.

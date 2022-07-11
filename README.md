@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 **Bootstrap**
 
 ### Workspace
-- https://clepsonfonseca.github.io/desfio-pratico-upbase/
+https://clepsonfonseca.github.io/desafio-pratico-upbase/
 
 ### UpBase
  - Projeto desenvolvido em - Junho 2022.
